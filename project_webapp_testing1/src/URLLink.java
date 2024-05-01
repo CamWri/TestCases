@@ -19,6 +19,7 @@ public class URLLink {
 
   @Test
   public void testURLLink() throws Exception {
+	driver.manage().window().maximize();
     driver.get("http://ec2-3-95-26-219.compute-1.amazonaws.com:8000/");
     driver.findElement(By.id("navbarDropdown")).click();
     driver.findElement(By.linkText("All Subjects")).click();
