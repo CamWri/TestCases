@@ -21,9 +21,13 @@ public class URLLink {
   public void testURLLink() throws Exception {
 	driver.manage().window().maximize();
     driver.get("http://ec2-3-95-26-219.compute-1.amazonaws.com:8000/");
+	Thread.sleep(500);
     driver.findElement(By.id("navbarDropdown")).click();
+	Thread.sleep(500);
     driver.findElement(By.linkText("All Subjects")).click();
+	Thread.sleep(1000);
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Subjects'])[2]/following::a[1]")).click();
+	Thread.sleep(1000);
     driver.findElement(By.linkText("Algebra")).click();
     js.executeScript("window.scrollBy(0,1000)");
 	Thread.sleep(5000);

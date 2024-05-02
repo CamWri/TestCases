@@ -35,7 +35,7 @@ public class AdminLogin {
 	Thread.sleep(2000);
     driver.findElement(By.xpath("//input[@value='Log in']")).click();
     assertTrue(driver.getPageSource().contains("Site administration"));
-    Thread.sleep(7000);
+    Thread.sleep(15000);
   }
 
   @After
