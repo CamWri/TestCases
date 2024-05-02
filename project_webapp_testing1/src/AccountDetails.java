@@ -42,9 +42,9 @@ public class AccountDetails {
     driver.findElement(By.xpath("//button[@type='submit']")).click();
     Thread.sleep(500);
     driver.findElement(By.linkText("Account")).click();
-    Thread.sleep(500);
+    Thread.sleep(1000);
     driver.findElement(By.linkText("Account Details")).click();
-    Thread.sleep(3000);
+    Thread.sleep(5000);
     assertTrue(driver.getPageSource().contains("Testing") && driver.getPageSource().contains("Bill.Smith@gmail.com"));
   }
 

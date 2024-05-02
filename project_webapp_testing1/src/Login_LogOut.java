@@ -14,7 +14,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import static org.junit.Assert.*;
 
-public class Login {
+public class Login_LogOut {
    private WebDriver driver;
    private String baseUrl;
    private boolean acceptNextAlert = true;
@@ -39,14 +39,14 @@ public class Login {
       Thread.sleep(1500);
       driver.findElement(By.xpath("//*[@id=\"username\"]")).sendKeys("Testing");
       driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys("bIll#123");
-      Thread.sleep(1500);
+      Thread.sleep(4000);
       driver.findElement(By.className("btn-primary")).click();
-      Thread.sleep(3000);
+      Thread.sleep(8000);
       assertTrue(driver.getPageSource().contains("Add Post"));
       driver.findElement(By.linkText("Account")).click();
       Thread.sleep(2000);
       driver.findElement(By.xpath("//*[@id=\"navbarNav\"]/ul/li[3]/div/a[3]")).click();
-      Thread.sleep(5000);
+      Thread.sleep(8000);
    }
 
    @After

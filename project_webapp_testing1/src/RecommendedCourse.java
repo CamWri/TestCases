@@ -19,6 +19,7 @@ public class RecommendedCourse {
 
   @Test
   public void testRecommendedCourse() throws Exception {
+    driver.manage().window().maximize();
     driver.get("http://ec2-3-95-26-219.compute-1.amazonaws.com:8000/");
 	Thread.sleep(500);
     driver.findElement(By.linkText("Account")).click();
