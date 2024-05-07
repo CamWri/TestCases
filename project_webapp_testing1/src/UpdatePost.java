@@ -49,16 +49,16 @@ public class UpdatePost {
 	   Thread.sleep(3000);
 	   
 	   driver.findElement(By.className("btn-primary")).click();
-       Thread.sleep(8000);
+       Thread.sleep(5000);
        driver.findElement(By.xpath("//*[@id=\"id_title\"]")).clear();
        driver.findElement(By.xpath("//*[@id=\"id_post_description\"]")).clear();
        driver.findElement(By.xpath("//*[@id=\"id_title\"]")).sendKeys("AP Physics Answers");
        driver.findElement(By.xpath("//*[@id=\"id_post_description\"]")).sendKeys("Post to help students with their physics Labs");
        driver.findElement(By.xpath("//*[@id=\"id_ticket_course\"]/option[16]")).click();
-       Thread.sleep(10000);
+       Thread.sleep(5000);
        
        driver.findElement(By.className("btn-secondary")).click();
-       Thread.sleep(12000);
+       Thread.sleep(7000);
 	   
        driver.findElement(By.linkText("Account")).click();
 	   Thread.sleep(1500);
